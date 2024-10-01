@@ -193,38 +193,7 @@ createApp({
 }).mount('#app')
 // Vue app ends
 
-// const horizontalContainers = document.querySelectorAll('.horizontal__container');
-// for (const container of horizontalContainers) {
-//     let isDragging = false;
-//     let startX;
-//     let scrollLeft;
-
-//     container.addEventListener('mousedown', (e) => {
-//         e.preventDefault();
-//         isDragging = true;
-//         container.classList.add('active');
-//         startX = e.pageX - container.offsetLeft;
-//         scrollLeft = container.scrollLeft;
-//     });
-
-//     container.addEventListener('mouseleave', () => {
-//         isDragging = false;
-//         container.classList.remove('active');
-//     });
-
-//     container.addEventListener('mouseup', () => {
-//         isDragging = false;
-//         container.classList.remove('active');
-//     });
-
-//     container.addEventListener('mousemove', (e) => {
-//         if (!isDragging) return; // Stop the function if not dragging
-//         e.preventDefault(); // Prevent text selection
-//         const x = e.pageX - container.offsetLeft;
-//         const walk = (x - startX) * 2; // Adjust scroll speed
-//         container.scrollLeft = scrollLeft - walk;
-//     });    
-// }
+// Carousel animation begins
 const carouselContainers = document.querySelectorAll('.carousel-container');
 for (const carouselContainer of carouselContainers) {
     const carousel = carouselContainer.querySelector('.carousel');
@@ -248,3 +217,4 @@ for (const carouselContainer of carouselContainers) {
     // Auto-slide every 3 seconds
     setInterval(() => showSlide(currentIndex + 1), 3000);
 }
+// Carousel animation ends

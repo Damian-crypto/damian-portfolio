@@ -476,27 +476,17 @@ img {
     overflow: hidden;
     position: relative;
 }
+
 .carousel {
     display: flex;
     transition: transform 0.5s ease-in-out;
 }
+
 .slide {
     min-width: 400px;
-    // min-width: calc(50% - 10px); /* 50% width for two items, minus gap */
-    // height: 200px;
     margin-right: 10px; /* Gap between slides */
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
-    // font-size: 24px;
-    // color: white;
 }
-// .slide:nth-child(1) { background-color: #3498db; }
-// .slide:nth-child(2) { background-color: #e74c3c; }
-// .slide:nth-child(3) { background-color: #2ecc71; }
-// .slide:nth-child(4) { background-color: #f39c12; }
-// .slide:nth-child(5) { background-color: #9b59b6; }
-// .slide:nth-child(6) { background-color: #34495e; }
+
 .nav-button {
     position: absolute;
     top: 50%;
@@ -507,7 +497,9 @@ img {
     padding: 10px;
     cursor: pointer;
 }
+
 .nav-button.prev { left: 10px; }
+
 .nav-button.next { right: 10px; }
 
 /* ===== CONTACT =====*/
