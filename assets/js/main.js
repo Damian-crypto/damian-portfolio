@@ -200,21 +200,66 @@ for (const carouselContainer of carouselContainers) {
     const slides = carouselContainer.querySelectorAll('.slide');
     const prevButton = carouselContainer.querySelector('.prev');
     const nextButton = carouselContainer.querySelector('.next');
+    const slidesToShow = 2;
     let currentIndex = 0;
-    const slidesToShow = 3;
-    
+    let movable = true;
+    let intervalId;
+    let isHovered = false;
+
     function showSlide(index) {
-        const totalSlides = slides.length;
-        if (index < 0) index = totalSlides - slidesToShow;
-        if (index > totalSlides - slidesToShow) index = 0;
-        carousel.style.transform = `translateX(-${index * (100 / slidesToShow)}%)`;
-        currentIndex = index;
+        if (movable) {
+            const totalSlides = slides.length;
+            if (index < 0) index = totalSlides - slidesToShow;
+            if (index > totalSlides - slidesToShow) index = 0;
+            carousel.style.transform = `translateX(-${index * (100 / slidesToShow)}%)`;
+            currentIndex = index;
+        }
     }
-    
-    prevButton.addEventListener('click', () => showSlide(currentIndex - 1));
-    nextButton.addEventListener('click', () => showSlide(currentIndex + 1));
-    
+
+    // for (const slide of slides) {
+    //     slide.addEventListener('onmouseover', () => {
+    //         console.log('mouse entered')
+    //     });
+    // }
+
+    // prevButton.addEventListener('click', () => showSlide(currentIndex - 1));
+    // nextButton.addEventListener('click', () => showSlide(currentIndex + 1));
+
     // Auto-slide every 3 seconds
-    setInterval(() => showSlide(currentIndex + 1), 3000);
+    // setInterval(() => showSlide(currentIndex + 1), 3000);
+
+    function startAutoSlide() {
+        intervalId = setInterval(() => {
+            if (!isHovered) {
+                showSlide(currentIndex + 1);
+            }
+        }, 3000);
+    }
+
+    function stopAutoSlide() {
+        clearInterval(intervalId);
+    }
+
+    prevButton.addEventListener('click', () => {
+        showSlide(currentIndex - 1);
+        stopAutoSlide();
+        startAutoSlide();
+    });
+
+    nextButton.addEventListener('click', () => {
+        showSlide(currentIndex + 1);
+        stopAutoSlide();
+        startAutoSlide();
+    });
+
+    carouselContainer.addEventListener('mouseenter', () => {
+        isHovered = true;
+    });
+
+    carouselContainer.addEventListener('mouseleave', () => {
+        isHovered = false;
+    });
+
+    startAutoSlide();
 }
 // Carousel animation ends
