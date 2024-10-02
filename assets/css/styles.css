@@ -395,7 +395,7 @@ img {
 }
 
 .slide {
-  min-width: 400px;
+  min-width: calc(50% - 10px);
   margin-right: 10px; /* Gap between slides */
 }
 

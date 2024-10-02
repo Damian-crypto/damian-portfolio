@@ -85,6 +85,20 @@ createApp({
                 "description": "Zeus is a lightweight simple game engine built for learning purposes, featuring graphics programming with OpenGL and Vulkan, along with integrated audio systems, physics, animation, and networking capabilities for a comprehensive game development experience.",
                 "techstack": ["c++", "opengl"]
             },
+            {
+                "name": "Ad Remover",
+                "img": "assets/img/work7.png",
+                "link": "",
+                "description": "Ad Remover is a simple chrome browser extension designed to block or remove intrusive ads while enhancing user browsing experience by keeping web pages clean and distraction-free.",
+                "techstack": ["javascript", "chrome-api"]
+            },
+            {
+                "name": "Decompiler Explorer",
+                "img": "https://private-user-images.githubusercontent.com/58256720/372709428-3227fba5-8e05-4740-9010-fe860e3c0659.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Mjc4MzY2MDAsIm5iZiI6MTcyNzgzNjMwMCwicGF0aCI6Ii81ODI1NjcyMC8zNzI3MDk0MjgtMzIyN2ZiYTUtOGUwNS00NzQwLTkwMTAtZmU4NjBlM2MwNjU5LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDEwMDIlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQxMDAyVDAyMzE0MFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWI5M2I5Y2U2NmJmMWI0Y2MwNTVjZDQ2YWUxNmEzN2U4NzM0Mzg1OWM2ZmM5MjBjMDY5NDdmYWY1MDgyZTk2OWUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.r3StkLkt5IZIUGU7SOW3AZCJR6BL-FDhGrtAMOWmRzQ",
+                "link": "https://github.com/Damian-crypto/dcompiler-explorer",
+                "description": "Decompiler Explorer is a simple tool designed to reverse-engineer compiled binaries from C++, C, Java, and Python, allowing users to explore the underlying source code, analyze program structure, and gain insights into executable files within your local machine.",
+                "techstack": ["python", "html", "css"]
+            },
         ];
 
         const skills = [
