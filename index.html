@@ -97,11 +97,6 @@
             </div>
         </section>
 
-        <!--===== EDUCATION =====-->
-        <section class="education section" id="education">
-            <h2 class="section-title">Education</h2>
-        </section>
-
         <!--===== SKILLS =====-->
         <section class="skills section" id="skills">
             <h2 class="section-title">Skills</h2>
@@ -148,9 +143,6 @@
                                 <small class="text-body-secondary">Tech Stack:&nbsp;</small>
                                 <small class="text-body-secondary work__card__bottom__techcard"
                                     v-for="tech in project.techstack">
-                                    <!-- <svg width="30" height="30">
-                                        <use :href="'#' + tech"></use>
-                                    </svg> -->
                                     {{ tech }}
                                 </small>
                                 <!-- <i class='bx bxl-react'></i> -->
@@ -161,9 +153,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- <a href="" class="work__img">
-                    <img src="assets/img/work1.jpg" alt="">
-                </a> -->
             </div>
         </section>
 
@@ -192,7 +181,7 @@
 
         <!--===== BLOGS =====-->
         <section class="blog section" id="blog">
-            <h2 class="section-title">Blogs & Vlogs</h2>
+            <h2 class="section-title">Blogs</h2>
             <div class="carousel-container">
                 <div class="carousel">
                     <div class="slide" v-for="tutorial in tutorials">

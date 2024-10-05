@@ -94,7 +94,7 @@ createApp({
             },
             {
                 "name": "Decompiler Explorer",
-                "img": "https://private-user-images.githubusercontent.com/58256720/372709428-3227fba5-8e05-4740-9010-fe860e3c0659.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Mjc4MzY2MDAsIm5iZiI6MTcyNzgzNjMwMCwicGF0aCI6Ii81ODI1NjcyMC8zNzI3MDk0MjgtMzIyN2ZiYTUtOGUwNS00NzQwLTkwMTAtZmU4NjBlM2MwNjU5LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDEwMDIlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQxMDAyVDAyMzE0MFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWI5M2I5Y2U2NmJmMWI0Y2MwNTVjZDQ2YWUxNmEzN2U4NzM0Mzg1OWM2ZmM5MjBjMDY5NDdmYWY1MDgyZTk2OWUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.r3StkLkt5IZIUGU7SOW3AZCJR6BL-FDhGrtAMOWmRzQ",
+                "img": "https://raw.githubusercontent.com/Damian-crypto/dcompiler-explorer/refs/heads/main/static/img.png",
                 "link": "https://github.com/Damian-crypto/dcompiler-explorer",
                 "description": "Decompiler Explorer is a simple tool designed to reverse-engineer compiled binaries from C++, C, Java, and Python, allowing users to explore the underlying source code, analyze program structure, and gain insights into executable files within your local machine.",
                 "techstack": ["python", "html", "css"]
@@ -174,13 +174,13 @@ createApp({
             {
                 "title": "AI/ML Engineering - Stage 1",
                 "url": "https://code.sliit.org/certificates/gdpnv1tb1a",
-                "banner": "https://cdn.filestackcontent.com/0GjYl1LeSdeBNP6cF6SS?policy=eyJjYWxsIjpbInBpY2siLCJzdG9yZSIsInJlYWQiLCJjb252ZXJ0Iiwid3JpdGUiLCJzdGF0IiwicmVtb3ZlIl0sImV4cGlyeSI6MTcyNzY3MjEyMywicGF0aCI6IndlbGNvbWUtZXhwZXJpZW5jZVxcLy4qIn0%3D&signature=6d43be000160d2e2eb60b1b2a1110bba2a15ead2f2ffabec804afb161e2bd62c",
+                "banner": "./assets/img/aiml_stage1.jpg",
                 "issue": "CODE - SLIIT"
             },
             {
                 "title": "AI/ML Engineering - Stage 2",
                 "url": "https://code.sliit.org/certificates/krpid1fwhr",
-                "banner": "https://cdn.filestackcontent.com/olrhXZ6IR4Sm2Ld26xuF?policy=eyJjYWxsIjpbInBpY2siLCJzdG9yZSIsInJlYWQiLCJjb252ZXJ0Iiwid3JpdGUiLCJzdGF0IiwicmVtb3ZlIl0sImV4cGlyeSI6MTcyNzY3MjI2MywicGF0aCI6IndlbGNvbWUtZXhwZXJpZW5jZVxcLy4qIn0%3D&signature=c0f70ba3ab8657f6d4e3b1394a9a7a21785d93f7452c758ccb2fa4ae854f6cb3",
+                "banner": "./assets/img/aiml_stage2.jpg",
                 "issue": "CODE - SLIIT"
             },
             {
@@ -214,7 +214,7 @@ for (const carouselContainer of carouselContainers) {
     const slides = carouselContainer.querySelectorAll('.slide');
     const prevButton = carouselContainer.querySelector('.prev');
     const nextButton = carouselContainer.querySelector('.next');
-    const slidesToShow = 2;
+    const slidesToShow = 3;
     let currentIndex = 0;
     let movable = true;
     let intervalId;

@@ -399,31 +399,31 @@ img {
             }
         }
 
-        // height: 80vh;
+        // height: 90vh;
         // overflow-y: auto;
         // overflow-x: hidden;
     }
 }
 
-/* ===== TUTORIAL =====*/
+/* ===== BLOGS =====*/
 .blog {
     &__container {
         row-gap: 2rem;
     }
 
-    &__img {
-        // box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15); 
-        // border-radius: .5rem;
-        // overflow: hidden;
+    // &__img {
+    //     box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15); 
+    //     border-radius: .5rem;
+    //     overflow: hidden;
 
-        & img {
-            transition: 1s;
+    //     & img {
+    //         transition: 1s;
 
-            &:hover {
-                transform: scale(1.1);
-            }
-        }
-    }
+    //         &:hover {
+    //             transform: scale(1.1);
+    //         }
+    //     }
+    // }
 
     &__card {
         &__text {
@@ -446,8 +446,8 @@ img {
             }
         }
 
-        width: 25vw;
-        // height: 80vh;
+        // width: 20vw;
+        // height: 40vh;
         // overflow-y: auto;
         // overflow-x: hidden;
     }
@@ -458,7 +458,7 @@ img {
 }
 
 .card-img-top {
-    object-fit: contain;
+    object-fit: cover;
     height: 180px;
 }
 
@@ -471,7 +471,8 @@ img {
 /* ===== CAROUSEL ANIMATION =====*/
 .carousel-container {
     width: 100%;
-    max-width: 800px;
+    // max-width: 800px;
+    max-width: 90vw;
     margin: 0 auto;
     overflow: hidden;
     position: relative;
@@ -483,9 +484,10 @@ img {
 }
 
 .slide {
-    // min-width: 400px;
-    min-width: calc(50% - 10px);
-    margin-right: 10px; /* Gap between slides */
+    min-width: 400px;
+    // min-width: calc(50% - 10px);
+    margin-right: 10px;
+    /* Gap between slides */
 }
 
 .nav-button {
@@ -499,9 +501,13 @@ img {
     cursor: pointer;
 }
 
-.nav-button.prev { left: 10px; }
+.nav-button.prev {
+    left: 10px;
+}
 
-.nav-button.next { right: 10px; }
+.nav-button.next {
+    right: 10px;
+}
 
 /* ===== CONTACT =====*/
 .contact {
@@ -552,6 +558,32 @@ img {
     &__copy {
         font-size: var(--smaller-font-size);
     }
+}
+
+/* Custom Scrollbar Styles */
+/* For webkit-based browsers (Chrome, Safari, etc.) */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* For Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #888 #f1f1f1;
 }
 
 /* ===== MEDIA QUERIES=====*/
@@ -695,9 +727,10 @@ img {
         display: flex;
         gap: 2em;
         overflow-x: auto;
-        scroll-snap-type: x mandatory; /* Optional: For smooth snapping scroll */
+        scroll-snap-type: x mandatory;
+        /* Optional: For smooth snapping scroll */
     }
-    
+
     .blog__container::-webkit-scrollbar {
         width: 0;
     }
