@@ -159,46 +159,38 @@
         <!--===== CERTIFICATIONS =====-->
         <section class="blog section" id="certs">
             <h2 class="section-title">Certifications</h2>
-            <div class="carousel-container">
-                <div class="carousel">
-                    <div class="slide" v-for="cert in certifications">
-                        <div class="card mb-3">
-                            <img class="card-img-top" alt="" :src="cert.banner">
-                            <div class="card-body">
-                                <h5 class="card-title">{{ cert.title }}</h5>
-                                <p class="text-body-secondary">Issuer:&nbsp;{{ cert.issue }}</p>
-                                <br />
-                                <a :href="cert.url" class="btn btn-primary" target="_blank">View <i
-                                        class='bx bx-link-external'></i></a>
-                            </div>
+            <div class="work__container bd-grid">
+                <div class="slide" v-for="cert in certifications">
+                    <div class="card mb-3">
+                        <img class="card-img-top" alt="" :src="cert.banner">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ cert.title }}</h5>
+                            <p class="text-body-secondary">Issuer:&nbsp;{{ cert.issue }}</p>
+                            <br />
+                            <a :href="cert.url" class="btn btn-primary" target="_blank">View <i
+                                    class='bx bx-link-external'></i></a>
                         </div>
                     </div>
                 </div>
-                <button class="nav-button prev">&lt;</button>
-                <button class="nav-button next">&gt;</button>
             </div>
         </section>
 
         <!--===== BLOGS =====-->
         <section class="blog section" id="blog">
             <h2 class="section-title">Blogs</h2>
-            <div class="carousel-container">
-                <div class="carousel">
-                    <div class="slide" v-for="tutorial in tutorials">
-                        <div class="card mb-3">
-                            <img class="card-img-top" alt="" :src="tutorial.banner">
-                            <div class="card-body">
-                                <h5 class="card-title">{{ tutorial.title }}</h5>
-                                <p class="text-body-secondary">Author:&nbsp;{{ tutorial.author }}</p>
-                                <br />
-                                <a :href="tutorial.url" class="btn btn-primary" target="_blank">Read <i
-                                        class='bx bxs-book-reader'></i></a>
-                            </div>
+            <div class="work__container bd-grid">
+                <div class="slide" v-for="tutorial in tutorials">
+                    <div class="card mb-3">
+                        <img class="card-img-top" alt="" :src="tutorial.banner">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ tutorial.title }}</h5>
+                            <p class="text-body-secondary">Author:&nbsp;{{ tutorial.author }}</p>
+                            <br />
+                            <a :href="tutorial.url" class="btn btn-primary" target="_blank">Read <i
+                                    class='bx bxs-book-reader'></i></a>
                         </div>
                     </div>
                 </div>
-                <button class="nav-button prev">&lt;</button>
-                <button class="nav-button next">&gt;</button>
             </div>
         </section>
 
