@@ -338,22 +338,46 @@ img {
   background-color: rgba(11, 93, 215, 0.0666666667);
 }
 
+/* ===== CERT ======*/
+.cert__container {
+  row-gap: 2rem;
+}
+.cert__imgimg {
+  transition: 1s;
+}
+.cert__imgimg:hover {
+  transform: scale(1.1);
+}
+.cert .card__text {
+  text-justify: distribute;
+}
+.cert .card__bottom {
+  display: flex;
+  align-items: center;
+}
+
 /* ===== BLOGS =====*/
 .blog__container {
   row-gap: 2rem;
 }
-.blog__card__text {
+.blog__img img {
+  transition: 1s;
+}
+.blog__img img:hover {
+  transform: scale(1.1);
+}
+.blog .card {
+  height: 50vh;
+}
+.blog .card__text {
   text-justify: distribute;
 }
-.blog__card__bottom {
+.blog .card__bottom {
   display: flex;
   align-items: center;
 }
-.blog__card__bottom__techcard {
-  border-radius: 1em;
-  padding: 0.4em;
-  margin: 0.1em;
-  background-color: rgba(11, 93, 215, 0.0666666667);
+.blog__smalltext {
+  font-size: 10px;
 }
 
 .card {
@@ -483,6 +507,16 @@ img {
     column-gap: 2rem;
     padding-top: 2rem;
   }
+  .cert__container {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+    padding-top: 2rem;
+  }
+  .blog__container {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+    padding-top: 2rem;
+  }
   .contact__form {
     width: 360px;
     padding-top: 2rem;
@@ -546,15 +580,13 @@ img {
     grid-template-columns: repeat(3, 1fr);
     column-gap: 2rem;
   }
-  .blog__container {
-    display: flex;
-    gap: 2em;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    /* Optional: For smooth snapping scroll */
+  .cert__container {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 2rem;
   }
-  .blog__container::-webkit-scrollbar {
-    width: 0;
+  .blog__container {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 2rem;
   }
 }
 @media screen and (min-width: 992px) {

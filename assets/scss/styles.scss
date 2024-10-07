@@ -405,27 +405,27 @@ img {
     }
 }
 
-/* ===== BLOGS =====*/
-.blog {
+/* ===== CERT ======*/
+.cert {
     &__container {
         row-gap: 2rem;
     }
 
-    // &__img {
-    //     box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15); 
-    //     border-radius: .5rem;
-    //     overflow: hidden;
+    &__img {
+        // box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15); 
+        // border-radius: .5rem;
+        // overflow: hidden;
 
-    //     & img {
-    //         transition: 1s;
+        &img {
+            transition: 1s;
 
-    //         &:hover {
-    //             transform: scale(1.1);
-    //         }
-    //     }
-    // }
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
 
-    &__card {
+    .card {
         &__text {
             text-justify: distribute;
         }
@@ -433,23 +433,53 @@ img {
         &__bottom {
             display: flex;
             align-items: center;
-
-            &__techcard {
-                // display: flex;
-                // flex-direction: column;
-                // align-items: center;
-                // border: 1px solid black;
-                border-radius: 1em;
-                padding: 0.4em;
-                margin: 0.1em;
-                background-color: #0b5dd711;
-            }
         }
 
-        // width: 20vw;
-        // height: 40vh;
+        // height: 60vh;
         // overflow-y: auto;
         // overflow-x: hidden;
+    }
+}
+
+/* ===== BLOGS =====*/
+.blog {
+    &__container {
+        row-gap: 2rem;
+    }
+
+    &__img {
+        // box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15); 
+        // border-radius: .5rem;
+        // overflow: hidden;
+
+        & img {
+            transition: 1s;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    .card {
+        &__text {
+            text-justify: distribute;
+        }
+
+        &__bottom {
+            display: flex;
+            align-items: center;
+        }
+
+        height: 50vh;
+        // width: 20vw;
+        // overflow-y: auto;
+        // overflow-x: hidden;
+    }
+
+    
+    &__smalltext {
+        font-size: 10px;
     }
 }
 
@@ -596,6 +626,18 @@ img {
         padding-top: 2rem;
     }
 
+    .cert__container {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+        padding-top: 2rem;
+    }
+
+    .blog__container {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+        padding-top: 2rem;
+    }
+
     .contact {
         &__form {
             width: 360px;
@@ -682,16 +724,14 @@ img {
         column-gap: 2rem;
     }
 
-    .blog__container {
-        display: flex;
-        gap: 2em;
-        overflow-x: auto;
-        scroll-snap-type: x mandatory;
-        /* Optional: For smooth snapping scroll */
+    .cert__container {
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 2rem;
     }
 
-    .blog__container::-webkit-scrollbar {
-        width: 0;
+    .blog__container {
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 2rem;
     }
 }
 
