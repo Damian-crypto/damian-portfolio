@@ -366,9 +366,6 @@ img {
 .blog__img img:hover {
   transform: scale(1.1);
 }
-.blog .card {
-  height: 50vh;
-}
 .blog .card__text {
   text-justify: distribute;
 }

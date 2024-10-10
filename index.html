@@ -137,7 +137,9 @@
                         <img class="card-img-top" :src="project.img" alt="">
                         <div class="card-body">
                             <h5 class="card-title">{{ project.name }}</h5>
-                            <p class="card-text work__card__text">{{ project.description }}</p>
+                            <p class="card-text work__card__text">
+                                {{project.description.substring(0, 100) + "..."}}
+                            </p>
                             <br />
                             <p class="card-text work__card__bottom">
                                 <small class="text-body-secondary">Tech Stack:&nbsp;</small>
