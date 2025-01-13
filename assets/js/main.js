@@ -183,12 +183,12 @@ createApp({
                 "banner": "./assets/img/dsf.jpg",
                 "issuer": "GreatLearning"
             },
-            {
-                "title": "Introduction to Critical Infrastructure Protection",
-                "url": "https://learn.opswatacademy.com/certificate/hIhTWoLpvg",
-                "banner": "./assets/img/opswat_icip.png",
-                "issuer": "OPSWAT Academy"
-            },
+            // {
+            //     "title": "Introduction to Critical Infrastructure Protection",
+            //     "url": "https://learn.opswatacademy.com/certificate/hIhTWoLpvg",
+            //     "banner": "./assets/img/opswat_icip.png",
+            //     "issuer": "OPSWAT Academy"
+            // },
             {
                 "title": "NDG Linux Essentials",
                 "url": "https://www.netacad.com/certificates?issuanceId=bcdadc32-9e1a-4b1b-bf57-c7d2f630f85c",
