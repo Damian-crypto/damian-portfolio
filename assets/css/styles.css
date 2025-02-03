@@ -14,8 +14,8 @@
   --body-font: "Poppins", sans-serif;
   --big-font-size: 2rem;
   --h2-font-size: 1.25rem;
-  --normal-font-size: .938rem;
-  --smaller-font-size: .75rem;
+  --normal-font-size: 0.938rem;
+  --smaller-font-size: 0.75rem;
   /*===== Margenes =====*/
   --mb-2: 1rem;
   --mb-4: 2rem;
@@ -30,7 +30,7 @@
     --big-font-size: 3.5rem;
     --h2-font-size: 2rem;
     --normal-font-size: 1rem;
-    --smaller-font-size: .875rem;
+    --smaller-font-size: 0.875rem;
   }
 }
 
@@ -282,7 +282,6 @@ img {
 }
 .skills__icon {
   font-size: 2rem;
-  margin-right: var(--mb-2);
   color: var(--first-color);
 }
 .skills__names {
@@ -314,6 +313,40 @@ img {
   border-radius: 0.5rem;
 }
 
+.skill-progresses {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.progress-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.progress-circle {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  background-color: #ffffff;
+  border-radius: 50%;
+  width: 140px;
+  height: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* ===== WORK =====*/
 .work__container {
   row-gap: 2rem;
@@ -327,14 +360,20 @@ img {
 .work__card__text {
   text-justify: distribute;
 }
+.work__card__description {
+  cursor: pointer;
+}
 .work__card__bottom {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
 }
 .work__card__bottom__techcard {
   border-radius: 1em;
   padding: 0.4em;
-  margin: 0.1em;
+  margin-right: 0.1em;
+  margin-bottom: 0.5em;
   background-color: rgba(11, 93, 215, 0.0666666667);
 }
 
@@ -393,6 +432,9 @@ img {
 }
 
 /* ===== CONTACT =====*/
+.contact__form {
+  text-align: center;
+}
 .contact__input {
   width: 100%;
   font-size: var(--normal-font-size);
@@ -404,7 +446,7 @@ img {
   margin-bottom: var(--mb-4);
 }
 .contact__button {
-  display: block;
+  display: inline-block;
   border: none;
   outline: none;
   font-size: var(--normal-font-size);
