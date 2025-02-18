@@ -301,7 +301,13 @@ createApp({
           'https://firebasestorage.googleapis.com/v0/b/testautomationu-9e0b6.appspot.com/o/certificates%2FTAU-2dac171a.png?alt=media&token=636df1a0-5c8d-4a34-960f-caa11e19f77e',
         issuer: 'Test Automation University',
       },
-      // { "title": "Web Element Locator Strategies", "url": "https://testautomationu.applitools.com//certificate/?id=b6398ef0", "banner": "https://firebasestorage.googleapis.com/v0/b/testautomationu-9e0b6.appspot.com/o/certificates%2FTAU-b6398ef0.png?alt=media&token=0a905424-087f-413d-a945-7894509a1431", "issuer": "Test Automation University" },
+      {
+        title: 'Web Element Locator Strategies',
+        url: 'https://testautomationu.applitools.com//certificate/?id=b6398ef0',
+        banner:
+          'https://firebasestorage.googleapis.com/v0/b/testautomationu-9e0b6.appspot.com/o/certificates%2FTAU-b6398ef0.png?alt=media&token=0a905424-087f-413d-a945-7894509a1431',
+        issuer: 'Test Automation University',
+      },
       // { "title": "Introduction to pytest", "url": "https://testautomationu.applitools.com//certificate/?id=3c9df18a", "banner": "https://firebasestorage.googleapis.com/v0/b/testautomationu-9e0b6.appspot.com/o/certificates%2FTAU-3c9df18a.png?alt=media&token=0efa3af8-fd40-440d-b351-af466609b3a5", "issuer": "Test Automation University" },
       // { "title": "Selenium WebDriver with Python", "url": "https://testautomationu.applitools.com//certificate/?id=c88ea7be", "banner": "https://firebasestorage.googleapis.com/v0/b/testautomationu-9e0b6.appspot.com/o/certificates%2FTAU-c88ea7be.png?alt=media&token=3c59b2c5-f904-47fe-9dc2-eb974173b481", "issuer": "Test Automation University" },
       // { "title": "Automated Visual Testing with Python", "url": "https://testautomationu.applitools.com//certificate/?id=d783beec", "banner": "https://firebasestorage.googleapis.com/v0/b/testautomationu-9e0b6.appspot.com/o/certificates%2FTAU-d783beec.png?alt=media&token=3cbce889-3119-404a-93fa-2a6d1a27fea7", "issuer": "Test Automation University" },
